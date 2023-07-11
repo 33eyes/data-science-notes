@@ -2,9 +2,9 @@
 A/B testing is a statistical technique for comparing two versions of something, version A vs version B.  
 
 ## How it works  
-1. Pick a level of statistical significance, a.k.a. alpha, for your A/B test experiment, and derive the minimum sample size needed.  
-2. Design your experiment so that you randomly assign version A to about half of your subjects and version B to the other half.  
-3. Conduct your experiment or collect your data until you have two comparable samples for each version, each of at least the minimum sample size.  
+1. Design your experiment so that you randomly assign version A to about half of your subjects and version B to the other half.  
+2. Pick a level of statistical significance, a.k.a. alpha, for your A/B test experiment, and derive the minimum sample size needed.  
+3. Conduct your experiment or collect your data until you have two comparable samples for each version, each of at least the minimum sample size.   
 4. Choose a meaningful estimator for your use case and the assumed distribution shape of the underlying distribution.  
    >**Example:** Your estimator may be the mean dollar value of a user's shopping cart, with an approximately normal distribution as the assumed underlying distribution of shopping cart dollar values.  
    >**Example:** Your estimator may be the click-through rate, and the assumed underlying distribution is binomial.  
@@ -31,7 +31,10 @@ A/B testing is a statistical technique for comparing two versions of something, 
 - A/B testing of individual parts of a whole does not guarantee improvement of the whole.  
   - For example, A/B testing is often used to test a small part of a webpage's design. The underlying assumption here is that the whole design is the sum of its parts. This is often not the case. A holistic approach to design matters: blindly following A/B testing for website design improvements can result in a website that is an incohesive mess and an overwhelming user experience.  
 - A/B testing is not subjectivity-free or bias-free, or intuition-free, for that matter.  
-  - A/B testing is a very popular technique, often branded as evidence-based, scientific, and other big fancy words that make it sound as reliable as hard science. This exaltation of A/B testing is often followed by some sort of shaming of using intuition or guesswork. Well, the thing is, conducting A/B testing involves a lot of intuition and educated guesswork, from deciding what, how and when to test to picking the right estimator and guessing the underlying distribution. Ideally, you want to leverage expert intuition and educated guesses as part of your A/B testing to get the most reliable results.
+  - A/B testing is a very popular technique, often branded as evidence-based, scientific, and other big fancy words that make it sound as reliable as hard science. This exaltation of A/B testing is often followed by some sort of shaming of using intuition or guesswork. The thing is, conducting A/B testing involves a lot of intuition and educated guesswork, from deciding what, how and when to test to picking the right estimator and guessing the underlying distribution. Ideally, you want to leverage expert intuition and educated guesses as part of your A/B testing to get the most reliable results.
 
 ## Examples  
-see notebook
+- [A/B testing landing page designs](https://github.com/33eyes/data-science-notes/blob/main/examples/AB_test_landing_page_conversion_rate.ipynb)  
+  - conversion rate as response variable  
+  - binomial disrtibution
+  - Fisher's exact test, two-sample z-test for proportions  

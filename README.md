@@ -1,2 +1,2 @@
-# My data science notes
-Notes and thoughts on data science, with code examples.
+# Data science notes
+Notes on data science, with code examples.
