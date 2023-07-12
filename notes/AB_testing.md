@@ -35,7 +35,7 @@ A/B testing is a statistical technique for comparing two versions of something, 
 - A/B testing is not subjectivity-free or bias-free, or intuition-free, for that matter.  
   - A/B testing is a very popular technique, often branded as evidence-based, scientific, and other big fancy words that make it sound as reliable as hard science. This exaltation of A/B testing is often followed by some sort of shaming of using intuition or guesswork. The thing is, conducting A/B testing involves a lot of intuition and educated guesswork, from deciding what, how and when to test to picking the right estimator and guessing the underlying distribution. Ideally, you want to leverage expert intuition and educated guesses as part of your A/B testing to get the most reliable results.  
 
-## Examples  
+## Code examples  
 - [A/B testing landing page designs](https://github.com/33eyes/data-science-notes/blob/main/examples/AB_test_landing_page_conversion_rate.ipynb)  
   - conversion rate as response variable  
   - binomial disrtibution
@@ -51,7 +51,7 @@ A/B testing is a statistical technique for comparing two versions of something, 
 - **1990s:** Modern version of A/B testing comes into use. [(source)](https://hbr.org/2017/06/a-refresher-on-ab-testing)  
 - **Feb 27, 2000:** Google engineers ran their first A/B test to find the optimal number of search results to display per page. [(source)](https://www.wired.com/2012/04/ff-abtesting/)  
 
-## What are the alternatives  
+## Alternatives  
 For A/B testing within marketing and digital product optimization domains, qualitative analysis techniques can be used as an alternative to A/B testing.  
 Some examples:  
 - User interviews  
