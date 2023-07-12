@@ -72,5 +72,5 @@ For the broader notion of a randomized controlled experiment, the alternative te
 - [The A/B Test: Inside the Technology That's Changing the Rules of Business](https://www.wired.com/2012/04/ff-abtesting/) (Wired, 2012)  
 - [The Complete Guide to A/B Testing: Expert Tips From Google, HubSpot, and More](https://www.shopify.com/blog/the-complete-guide-to-ab-testing) (Shopify Blog, 2022)  
 - [A/B testing](https://en.wikipedia.org/wiki/A/B_testing) (Wikipedia article)  
-- [E. Hariton, J. J. "Locascio, Randomised controlled trials—the gold standard for effectiveness research", BJOG (2018).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6235704/) (Accessed through NIH National Library of Medicine).  
+- [E. Hariton, J. J. Locascio, "Randomised controlled trials—the gold standard for effectiveness research", BJOG (2018).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6235704/) (Accessed through NIH National Library of Medicine).  
 
