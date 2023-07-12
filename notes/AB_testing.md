@@ -62,7 +62,7 @@ Some examples:
 For the broader notion of a randomized controlled experiment, the alternative techniques would depend on the exact problem to be solved.  
 
 ## Related concepts  
-- Randomized controlled experiment  
+- [Randomized controlled trial](https://github.com/33eyes/data-science-notes/blob/main/notes/randomized_controlled_trial.md)  
 - Experimentation  
 - Segmentation  
 - Multinomial/multivariate testing  
