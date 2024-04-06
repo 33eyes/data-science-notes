@@ -15,3 +15,7 @@ echo "c.IPKernelApp.capture_fd_output = False" >> \
 ```
 
 Source: [this SO answer](https://stackoverflow.com/a/70613254/23800771)
+
+
+## Tutirials
+- [17 min intro tutorial](https://www.youtube.com/watch?v=YvTzvZh3yTE)
