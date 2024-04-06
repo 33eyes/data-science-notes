@@ -13,3 +13,5 @@ ipython profile create
 echo "c.IPKernelApp.capture_fd_output = False" >> \
   "<REPLACE THIS WITH THE FILE PATH FOR ipython_kernel_config.py>"
 ```
+
+Source: [this SO answer](https://stackoverflow.com/a/70613254/23800771)
