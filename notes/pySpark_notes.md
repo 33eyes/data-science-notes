@@ -1,4 +1,5 @@
 # PySpark Notes
+For version 3.5.1.
 
 ## Documentation
 - [Official PySpark docs](https://spark.apache.org/docs/latest/api/python/index.html)
@@ -47,5 +48,17 @@ spark = SparkSession.builder.getOrCreate()
   ```
 - Creating a PySpark DataFrame from other inputs: [see examples in the docs](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html#DataFrame-Creation)
 
+#### Viewing Data
+- Show top rows: `spark_df.show(5)`
+- Print columns: `spark_df.columns`
+- Print schema: `spark_df.printSchema()`
+- Print dataframe summary (like Pandas): `spark_df.describe().show()`
+- Collect the distributed data: `df.collect()`
+  - shows data and its metadata
+  - `DataFrame.collect()` collects **all** of the distributed data from executors to the driver side, and makes it available as **local** data in Python. This can throw an out-of-memory error when the dataset is too large to fit in the driver side (i.e. locally).
+  - In order to avoid throwing an out-of-memory exception, use `DataFrame.take()` or `DataFrame.tail()` instead.
+- Get N rows of the distributed data: `df.take(N)`
+  - shows data and its metadata based on the N rows
+- **Convert PySpark dataframe to Pandas dataframe:** `pandas_df = spark_df.toPandas()`
 
   
