@@ -62,3 +62,13 @@ spark = SparkSession.builder.getOrCreate()
 - **Convert PySpark dataframe to Pandas dataframe:** `pandas_df = spark_df.toPandas()`
 
   
+#### Selecting and Accessing Data
+- PySpark DataFrame is lazily evaluated and simply selecting a column does not trigger the computation but it returns a Column instance.
+  - `df.a`
+- Most of column-wise operations return Columns.
+- These Columns can be used to select the columns from a DataFrame. For example, DataFrame.select() takes the Column instances that returns another DataFrame.
+  - `df.select(df.c).show()`
+- Assign new Column instance: `df.withColumn('upper_c', upper(df.c)).show()`
+- To select a subset of rows, use DataFrame.filter(): `df.filter(df.a == 1).show()`
+
+#### Applying a Function
